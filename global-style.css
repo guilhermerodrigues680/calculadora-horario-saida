@@ -1,0 +1,9 @@
+@font-face {
+    src: url(vendor/fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf);
+    font-family: 'Libre Franklin';
+    font-weight: normal;
+}
+
+html {
+    font-family: 'Libre Franklin', Helvetica, Arial, sans-serif;
+}
