@@ -4,6 +4,109 @@
     font-weight: normal;
 }
 
+/* RESET */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Libre Franklin', Helvetica, Arial, sans-serif;
+    font-size: larger;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-rows: [header] 80px [main] auto [footer] 80px;
+}
+
+.header {
+    grid-row: header;
+    background-color: #db6400;
+}
+
+.main {
+    grid-row: main;
+    background-color: #f8f1f1;
+}
+
+.footer {
+    grid-row: footer;
+    background-color: #16697a;
+}
+
+.wrapper {
+    max-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* MAIN CONTENT */
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.main__text {
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    font-size: 1rem;
+}
+
+.main__text--result {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.main__input {
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 1rem; /* Min mobile fonte 16px */
+}
+
+/* DISPOSITIVOS MOVEIS */
+
+@media screen and (max-width: 768px) {
+    
+
+    /* O flatpickr não centraliza no Safari, correcao: */
+    .main__input {
+        /* Safari */
+        -webkit-appearance: textfield;
+    }
+
+    .main__input::before {
+        content: '';
+        width: 100%;
+    }
+
+    .main__input::after {
+        content: '';
+        width: 100%;
+    }
+
 }

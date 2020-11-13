@@ -3,28 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.6/dist/flatpickr.min.css"> -->
+    <title>Calculadora horario de saida</title>
     <link rel="stylesheet" href="vendor/flatpickr/flatpickr.css">
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="global-style.css">
 
     <script src="vendor/flatpickr/flatpickr.js"></script>
     <script src="vendor/flatpickr/pt.js"></script>
-    <!-- <script src="https://npmcdn.com/flatpickr@4.6.6/dist/flatpickr.min.js"></script> -->
-    <!-- <script src="https://unpkg.com/flatpickr@4.6.6/dist/l10n/pt.js"></script> -->
-
 </head>
 <body>
-    <p>Horario chegada</p>
-    <input type="text" placeholder="Horario de chegada" id="input-horario-chegada">
-    <p>Horario Inicio Almoco</p>
-    <input type="text" placeholder="Horario de ida almoco" id="input-horario-inicio-almoco">
-    <p>Horario Fim Almoco</p>
-    <input type="text" placeholder="Horario de volta almoco" id="input-horario-fim-almoco">
-    <p>Horario de saida: </p>
-    <span id="elem-horario-saida"></span>
+    <header class="header">
+        <div class="wrapper">
+            
+        </div>
+    </header>
+    
+    <main class="main">
+        <div class="wrapper">
+            <div class="main__container">
+                <div class="main__content">
+                    <p class="main__text">horario chegada</p>
+                    <input type="text" placeholder="Horario de chegada" id="input-horario-chegada" class="main__input">
+                </div>
+
+                <div class="main__content">
+                    <p class="main__text">horario inicio almoco</p>
+                    <input type="text" placeholder="Horario de ida almoco" id="input-horario-inicio-almoco" class="main__input">
+                </div>
+                
+                <div class="main__content">
+                    <p class="main__text">horario fim almoco</p>
+                    <input type="text" placeholder="Horario de volta almoco" id="input-horario-fim-almoco" class="main__input">
+                </div>
+                
+                <div class="main__content">
+                    <p class="main__text">horario de saida</p>
+                    <span id="elem-horario-saida" class="main__text--result"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper">
+
+        </div>
+    </footer>
 
     <script src="app.js"></script>
 </body>
