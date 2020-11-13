@@ -88,6 +88,14 @@ body {
     font-size: 1rem; /* Min mobile fonte 16px */
 }
 
+.main__reset-button {
+    background-color: #ffa62b;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
 /* FOOTER */
 
 .footer__container {
@@ -102,6 +110,12 @@ body {
 .footer__text {
     padding: 0 10px;
     color: white;
+}
+
+/* Modificadores */
+
+.flex-0 {
+    flex: 0;
 }
 
 /* DISPOSITIVOS MOVEIS */
